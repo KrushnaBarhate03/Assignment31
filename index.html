@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 31</title>
+    <style>
+        #Laptop-image{
+            border:2px solid black;
+            border-radius:10px 12px;
+            margin:auto;
+            display:flex;
+
+        }
+        .Laptopp-image{
+            border:2px solid black;
+            border-radius:10px 12px;
+           
+            margin:15px;
+            height:50px;
+            width:50px;
+            padding:8px;
+
+        }
+        .Laptop-image-container{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style=text-align:center>Laptop Review</h1>
+    <img src="Laptop1.jpg" id="Laptop-image" height="400px" width="400px">
+
+    <div class="Laptop-image-container">
+        <img src="Laptop1.jpg" class="Laptopp-image" onclick="changeImage(1)">
+        <img src="Laptop2.jpg" class="Laptopp-image" onclick="changeImage(2)">
+        <img src="Laptop3.jpg" class="Laptopp-image" onclick="changeImage(3)">
+        <img src="Laptop4.jpg" class="Laptopp-image" onclick="changeImage(4)">
+        <img src="Laptop5.jpg" class="Laptopp-image" onclick="changeImage(5)">
+    </div>
+
+    <script>
+        function changeImage(num){
+            const Complete=document.getElementById('Laptop-image');
+            if(num==1){
+                Complete.src="Laptop1.jpg"
+            }
+            if(num==2){
+                Complete.src="Laptop2.jpg"
+            }
+            if(num==3){
+                Complete.src="Laptop3.jpg"
+            }
+            if(num==4){
+                Complete.src="Laptop4.jpg"
+            }
+            if(num==5){
+                Complete.src="Laptop5.jpg"
+            }
+
+        }
+    </script>
+    
+</body>
+</html>
